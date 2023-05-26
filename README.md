@@ -69,12 +69,10 @@ metadata:
 spec:
   selector:
     app: mysql
-  type: NodePort
   ports:
   - protocol: TCP
     port: 3306
     name: mysql
-    nodePort: 31002
 ---
 apiVersion: apps/v1
 kind: Deployment
